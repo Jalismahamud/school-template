@@ -3,7 +3,7 @@
 <section class="board_section">
 	<div class="container">
 		<div class="section-title text-center">
-			<h2>প্রতিষ্ঠান পরিচালনায়</h2>
+			<h2>আমাদের শিক্ষক ও পরিচালনা</h2>
 		</div>
 		<div class="row justify-content-center">
 			@foreach ($teachers as $teacher)

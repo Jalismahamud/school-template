@@ -32,14 +32,19 @@ class EdulebController extends Controller
         ]);
     }
 
-    public function pricing(): View
-    {
-        return view('eduleb.pricing');
-    }
-
     public function faq(): View
     {
         return view('eduleb.faq');
+    }
+
+    public function privacyPolicy(): View
+    {
+        return view('eduleb.privacy-policy');
+    }
+
+    public function termsAndConditions(): View
+    {
+        return view('eduleb.terms-and-conditions');
     }
 
     public function blog(): View

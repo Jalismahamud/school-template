@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', $post->title.' - Pashchim Dagori Ideal School')
+@section('title', $post->title.' - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -11,7 +11,7 @@
 					<div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 						<h1>{{ $post->title }}</h1>
 						<ul>
-							<li><a href="{{ route('home') }}">Home</a></li>
+							<li><a href="{{ route('home') }}">হোম</a></li>
 							<li> / {{ $post->title }}</li>
 						</ul>
 					</div><!-- //.HERO-TEXT -->
@@ -32,7 +32,7 @@
 							</div>
 						@endif
 						<div class="arti_content">
-							<span>{{ optional($post->published_at)->format('M d, Y') }} @if($post->category) | {{ $post->category }} @endif @if($post->author_name) | {{ $post->author_name }} @endif</span>
+							<span>{{ optional($post->published_at)->format('d/m/Y') }} @if($post->category) | {{ $post->category }} @endif @if($post->author_name) | {{ $post->author_name }} @endif</span>
 							{!! nl2br(e($post->content)) !!}
 						</div>
 					</div><!-- END ARTI SINGLE  -->
@@ -40,7 +40,7 @@
 				<div class="col-lg-4 col-sm-12 col-xs-12">
 					@if ($recentPosts->isNotEmpty())
 					<div class="sidebar-post">
-						<div class="sidebar_title"><h4>Recent Posts</h4></div>
+						<div class="sidebar_title"><h4>সাম্প্রতিক সংবাদ</h4></div>
 						@foreach ($recentPosts as $recent)
 						<div class="single_popular">
 							@if ($recent->featured_image)

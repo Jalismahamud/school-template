@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'About - Pashchim Dagori Ideal School')
+@section('title', 'আমাদের সম্পর্কে - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -9,10 +9,10 @@
 			<div class="container">
 				<div class="col-lg-10 offset-lg-1 text-center">
 					<div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<h1>About</h1>
+						<h1>আমাদের সম্পর্কে</h1>
 						<ul>
-							<li><a href="{{ route('home') }}">Home</a></li>
-							<li> / About</li>
+							<li><a href="{{ route('home') }}">হোম</a></li>
+							<li> / আমাদের সম্পর্কে</li>
 						</ul>
 					</div><!-- //.HERO-TEXT -->
 				</div><!--- END COL -->
@@ -24,36 +24,36 @@
 	<section class="top_cat__area section-padding" style="background-image: url({{ asset('assets/img/bg/shape-1.png') }});  background-size:cover; background-position: center center;">
 		<div class="container">
 			<div class="section-title text-center">
-				<h2>Start your journey With us</h2>
-				<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
+						<h2>পাশ্চিম ডাগরী আইডিয়াল স্কুল সম্পর্কে</h2>
+						<p>গাজীপুর সদর এলাকার শিক্ষার্থীদের জন্য একটি শৃঙ্খলাপূর্ণ, নিরাপদ ও মানবিক শিক্ষার পরিবেশ গড়ে তোলাই আমাদের লক্ষ্য।</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="single_tp">
 						<span class="sc_one">01</span>
-						<h3>Expert <br />Teacher</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.</p>
+						<h3>অভিজ্ঞ <br />শিক্ষক</h3>
+						<p>শিক্ষার্থীর বয়স ও বোঝার ক্ষমতা অনুযায়ী পাঠদান ও অনুশীলনে গুরুত্ব দেওয়া হয়।</p>
 					</div>
 				</div><!-- END COL -->
 				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 					<div class="single_tp">
 						<span class="sc_two">02</span>
-						<h3>Quality <br />Education</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.</p>
+						<h3>মানসম্মত <br />পাঠদান</h3>
+						<p>পাঠ্যবইভিত্তিক জ্ঞানের সঙ্গে ব্যবহারিক বোঝাপড়া ও নিয়মিত মূল্যায়ন যুক্ত করা হয়।</p>
 					</div>
 				</div><!-- END COL -->
 				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
 					<div class="single_tp">
 						<span class="sc_three">03</span>
-						<h3>Remote <br />Learning</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.</p>
+						<h3>সহায়ক <br />পরিবেশ</h3>
+						<p>প্রতিটি শিক্ষার্থীকে সম্মান ও যত্নের সঙ্গে শেখার সুযোগ দেওয়ার চেষ্টা করা হয়।</p>
 					</div>
 				</div><!-- END COL -->
 				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
 					<div class="single_tp">
 						<span class="sc_four">04</span>
-						<h3>Life Time <br />Support</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.</p>
+						<h3>নৈতিক <br />শিক্ষা</h3>
+						<p>সততা, সময়ানুবর্তিতা, দায়িত্ববোধ ও পারস্পরিক সম্মানকে শিক্ষার গুরুত্বপূর্ণ অংশ হিসেবে দেখা হয়।</p>
 					</div>
 				</div><!-- END COL -->
 			</div><!-- END ROW -->
@@ -67,39 +67,25 @@
 			<div class="row">
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="ab_img">
-						<img src="{{ asset('assets/img/about1.png') }}" class="img-fluid" alt="image">
+						<img src="{{ asset('assets/img/about1.png') }}" class="img-fluid" alt="বিদ্যালয়ের শিক্ষার পরিবেশ">
 					</div>
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="ab_content">
-						<h2>We Are Providing Quality Education For A Better Future</h2>
-						<p>Pashchim Dagori Ideal School offers a brand new approach to the most basic learning paradigms. We nurture academic excellence, creativity, confidence, and strong moral values.</p>
+						<h2>উন্নত ভবিষ্যতের জন্য মানসম্মত শিক্ষা</h2>
+						<p>পাশ্চিম ডাগরী আইডিয়াল স্কুলে শিক্ষার্থীদের একাডেমিক উৎকর্ষ, সৃজনশীলতা, আত্মবিশ্বাস ও নৈতিক মূল্যবোধ বিকাশে গুরুত্ব দেওয়া হয়।</p>
 						<ul>
-							<li><span class="ti-check"></span> Safe and supportive learning environment</li>
-							<li><span class="ti-check"></span> Experienced and dedicated teachers</li>
-							<li><span class="ti-check"></span> Focus on academic excellence and moral values</li>
+							<li><span class="ti-check"></span> নিরাপদ ও সহায়ক শিক্ষার পরিবেশ</li>
+							<li><span class="ti-check"></span> অভিজ্ঞ ও দায়িত্বশীল শিক্ষক</li>
+							<li><span class="ti-check"></span> একাডেমিক উৎকর্ষ ও নৈতিক মূল্যবোধ</li>
 						</ul>
-						<a class="btn_one" href="{{ route('instructor') }}">Meet Our Teachers <i class="ti-arrow-top-right"></i></a>
+						<a class="btn_one" href="{{ route('instructor') }}">শিক্ষকদের দেখুন <i class="ti-arrow-top-right"></i></a>
 					</div>
 				</div><!--- END COL -->
 			</div><!--- END ROW -->
 		</div><!--- END CONTAINER -->
 	</section>
 	<!-- END ABOUT US -->
-
-		<!-- START VIDEO -->
-		<section class="vid_area va2" style="background-image: url({{ asset('assets/img/bg/video.jpg') }});  background-size:cover; background-position: center center;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 vp_top wow fadeInUDown" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="video-area2">
-							<a href="https://www.youtube.com/watch?v=RXv_uIN6e-Y" class="magnific_popup video-button"><i class="fa fa-play"></i></a>
-						</div>
-					</div><!--- END COL -->
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->
-		</section>
-		<!-- END VIDEO -->
 
 		<!-- START COUNTER -->
 		<section class="count_area counter_feature">
@@ -109,28 +95,28 @@
 						<div class="single-counter">
 							<span class="ti-folder sc_one"></span>
 							<h2 class="counter-num">134</h2>
-							<p>Our Online Course</p>
+							<p>শ্রেণিভিত্তিক পাঠদান</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single-counter">
 							<span class="ti-medall-alt sc_two"></span>
 							<h2 class="counter-num">299</h2>
-							<p>Academic Programs</p>
+							<p>নিয়মিত মূল্যায়ন</p>
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single-counter">
 							<span class="ti-id-badge sc_three"></span>
 							<h2 class="counter-num">684</h2>
-							<p>Certified Students</p>
+							<p>শিক্ষার্থী উন্নয়ন</p>
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single-counter">
 							<span class="ti-user sc_four"></span>
 							<h2 class="counter-num">941</h2>
-							<p>Enrolled Students</p>
+							<p>অভিভাবক সহযোগিতা</p>
 						</div>
 					</div><!-- END COL -->
 				</div><!--- END ROW -->
@@ -145,20 +131,20 @@
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="single_ins" style="background-image: url({{ asset('assets/img/ins1.png') }});  background-size:cover; background-position: center center;">
 						<div class="single_ins_content">
-							<h4>Build Your Career</h4>
-							<h1>Become an Instructor</h1>
-							<p>Learn at your own pace, move the between multiple courses. </p>
-							<a class="btn_one" href="#">Apply now <i class="ti-arrow-top-right"></i></a>
+							<h4>শিক্ষক ও অভিভাবকের সহযোগিতা</h4>
+							<h1>শিক্ষার্থীর অগ্রগতি</h1>
+							<p>শিক্ষার্থীর পড়াশোনা ও আচরণগত উন্নয়নে বিদ্যালয় ও পরিবারের সমন্বিত সহযোগিতা গুরুত্বপূর্ণ।</p>
+							<a class="btn_one" href="{{ route('contact') }}">যোগাযোগ করুন <i class="ti-arrow-top-right"></i></a>
 						</div>
 					</div>
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="single_ins" style="background-image: url({{ asset('assets/img/ins2.png') }});  background-size:cover; background-position: center center;">
 						<div class="single_ins_content">
-							<h4>Build Your Career</h4>
-							<h1>Get Free Courses</h1>
-							<p>Learn at your own pace, move the between multiple courses. </p>
-							<a class="btn_one" href="#">Contact now <i class="ti-arrow-top-right"></i></a>
+							<h4>ভর্তি ও তথ্য</h4>
+							<h1>বিদ্যালয়ের সঙ্গে কথা বলুন</h1>
+							<p>ভর্তি, শ্রেণি, সময়সূচি ও প্রয়োজনীয় তথ্যের জন্য সরাসরি বিদ্যালয়ের সঙ্গে যোগাযোগ করুন।</p>
+							<a class="btn_one" href="{{ route('contact') }}">যোগাযোগ করুন <i class="ti-arrow-top-right"></i></a>
 						</div>
 					</div>
 				</div><!--- END COL -->
@@ -171,17 +157,14 @@
 		<section class="testi_area section-padding">
 			<div class="container">
 				<div class="section-title">
-					<h2>What Student&rsquo;s Say To Do <br />Their Online Course</h2>
+					<h2>আমাদের শিক্ষার্থী ও অভিভাবকদের <br />অভিজ্ঞতা</h2>
 				</div>
 				<div class="row">
 					<div class="col-lg-12 col-sm-12 col-xs-12">
 						<div id="testimonial-slider2" class="owl-carousel">
 							@foreach ([
-								['name' => 'Ajmain Adil', 'company' => 'Groton Inc', 'image' => 'testimonial/1.png'],
-								['name' => 'Sharukh Khan', 'company' => 'Red Chili Inc', 'image' => 'testimonial/2.png'],
-								['name' => 'Anushka sharma', 'company' => 'Naika Company', 'image' => 'testimonial/3.png'],
-								['name' => 'Ajmain Adil', 'company' => 'Groton Inc', 'image' => 'testimonial/4.png'],
-								['name' => 'Ajmain Adil', 'company' => 'Groton Inc', 'image' => 'testimonial/5.png'],
+									['name' => 'একজন অভিভাবক', 'company' => 'পশ্চিম ডাগরী', 'image' => 'testimonial/1.png'],
+									['name' => 'একজন শিক্ষার্থী', 'company' => 'গাজীপুর সদর', 'image' => 'testimonial/2.png'],
 							] as $testimonial)
 							<div class="testimonial">
 								<img src="{{ asset('assets/img/quote.png') }}" alt="" />
@@ -191,7 +174,7 @@
 									<i class="ti-star"></i>
 									<i class="ti-star"></i>
 									<i class="ti-star"></i>
-									<p>Aqestic optio amet a ququam saepe aliquid voluate dicta fuga dolor saerror sed earum a magni soluta quam minus dolor dolor sed earum a magni soluta autem dolor error error sit quam minus sint rem a rerum dolobus veritatis delectus.</p>
+									<p>বিদ্যালয়ের নিয়মিত পাঠদান, শিক্ষকদের যত্ন এবং অভিভাবকদের সঙ্গে যোগাযোগ শিক্ষার্থীদের আত্মবিশ্বাসী হয়ে উঠতে সহায়তা করে।</p>
 								</div>
 								<div class="testi_pic_title">
 									<img src="{{ asset('assets/img/'.$testimonial['image']) }}" alt="">

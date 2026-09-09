@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'Get In Touch - Pashchim Dagori Ideal School')
+@section('title', 'যোগাযোগ - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -9,10 +9,10 @@
 			<div class="container">
 				<div class="col-lg-10 offset-lg-1 text-center">
 					<div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<h1>Get In Touch</h1>
+						<h1>যোগাযোগ করুন</h1>
 						<ul>
-							<li><a href="{{ route('home') }}">Home</a></li>
-							<li> / Contact</li>
+							<li><a href="{{ route('home') }}">হোম</a></li>
+							<li> / যোগাযোগ</li>
 						</ul>
 					</div><!-- //.HERO-TEXT -->
 				</div><!--- END COL -->
@@ -27,24 +27,24 @@
 					<div class="col-lg-4 col-sm-4 col-xs-12 no-padding wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 						<div class="single_address sa_one">
 							<i class="ti-map"></i>
-							<h4>Our Location</h4>
-							<p>3481 Melrose Place, Beverly Hills <br /> CA 90210</p>
+							<h4>বিদ্যালয়ের ঠিকানা</h4>
+							<p>পাশ্চিম ডাগরী, মির্জাপুর<br />গাজীপুর সদর, গাজীপুর</p>
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-4 col-sm-4 col-xs-12 no-padding wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="single_address sa_two">
 							<i class="ti-mobile"></i>
-							<h4>Telephone</h4>
-							<p>(+1) 517 397 7100</p>
-							<p>(+1) 411 315 8138</p>
+							<h4>যোগাযোগের নম্বর</h4>
+							<p><a href="tel:+8801772849386">01772849386</a></p>
+							<p><a href="https://wa.me/8801772849386">হোয়াটসঅ্যাপ</a></p>
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-4 col-sm-4 col-xs-12 no-padding wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 						<div class="single_address sa_three">
 							<i class="ti-email"></i>
-							<h4>Send email</h4>
-							<p>Info@example.com</p>
-							<p>admin@example.com</p>
+							<h4>বিদ্যালয় সম্পর্কিত তথ্য</h4>
+							<p>ভর্তি ও একাডেমিক তথ্য</p>
+							<p>সকাল থেকে বিকেল পর্যন্ত ফোনে যোগাযোগ করুন</p>
 						</div>
 					</div><!-- END COL -->
 				</div><!--- END ROW -->
@@ -76,31 +76,34 @@
 								@csrf
 								<div class="row">
 									<div class="form-group col-md-6">
-										<label for="">Name</label>
+														<label for="name">আপনার নাম</label>
 										<input type="text" name="name" class="form-control" value="{{ old('name') }}" required="required">
 									</div>
 									<div class="form-group col-md-6">
-										<label for="">Your Email</label>
+														<label for="email">ইমেইল</label>
 										<input type="email" name="email" class="form-control" value="{{ old('email') }}" required="required">
 									</div>
 									<div class="form-group col-md-12">
-										<label for="">Your Subject</label>
+														<label for="subject">বিষয়</label>
 										<input type="text" name="subject" class="form-control" value="{{ old('subject') }}">
 									</div>
 									<div class="form-group col-md-12">
-										<label for="">Your Message</label>
+														<label for="message">আপনার বার্তা</label>
 										<textarea rows="6" name="message" class="form-control" required="required">{{ old('message') }}</textarea>
 									</div>
 									<div class="col-md-12 text-center">
-										<button type="submit" value="Send message" name="submit" id="submitButton" class="btn_one" title="Submit Your Message!">Send Message</button>
+														<button type="submit" value="Send message" name="submit" id="submitButton" class="btn_one" title="Submit Your Message!">বার্তা পাঠান</button>
 									</div>
 								</div>
 							</form>
 						</div>
 					</div><!-- END COL  -->
 					<div class="col-lg-5 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.957183635167!2d-74.00402768559431!3d40.71895904512855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598a1316e7a7%3A0x47bb20eb6074b3f0!2sNew%20Work%20City%20-%20(CLOSED)!5e0!3m2!1sbn!2sbd!4v1600305497356!5m2!1sbn!2sbd" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<div class="contact_info_box">
+							<h3>বিদ্যালয় অফিস</h3>
+							<p>ভর্তি, শ্রেণি, সময়সূচি ও শিক্ষার্থী সম্পর্কিত তথ্যের জন্য অফিসে যোগাযোগ করুন।</p>
+							<p><strong>প্রতিষ্ঠাতা:</strong> আলহাজ্ব মোঃ সুরুজ্জামান মাস্টার</p>
+							<a class="btn_one" href="tel:+8801772849386">ফোন করুন <i class="ti-mobile"></i></a>
 						</div>
 					</div><!-- END COL  -->
 				</div><!-- END ROW -->

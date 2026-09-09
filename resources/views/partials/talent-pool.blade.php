@@ -3,8 +3,8 @@
 <section class="talent_section section-padding">
 	<div class="container">
 		<div class="section-title text-center">
-			<h2>Talent Pool</h2>
-			<p>Students who achieved outstanding results and made us proud.</p>
+			<h2>কৃতী শিক্ষার্থী</h2>
+			<p>যেসব শিক্ষার্থী নিয়মিত পরিশ্রম, ভালো ফলাফল ও শৃঙ্খলার মাধ্যমে বিদ্যালয়ের সুনাম বৃদ্ধি করছে।</p>
 		</div>
 		<div class="row">
 			@foreach ($students as $student)

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 
 	<head>
 		<!-- Meta -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Pashchim Dagori Ideal School is committed to providing high-quality education in a safe, supportive, and stimulating learning environment.">
-		<meta name="keywords" content="school, education, Pashchim Dagori Ideal School, Mirzapur, Gazipur">
-		<title>@yield('title', 'Pashchim Dagori Ideal School')</title>
+		<meta name="description" content="পাশ্চিম ডাগরী আইডিয়াল স্কুল একটি নিরাপদ, সহায়ক ও মানসম্মত শিক্ষার পরিবেশ গড়ে তুলতে প্রতিশ্রুতিবদ্ধ।">
+		<meta name="keywords" content="বিদ্যালয়, শিক্ষা, পাশ্চিম ডাগরী আইডিয়াল স্কুল, মির্জাপুর, গাজীপুর">
+		<title>@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')</title>
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
 		<!-- Google Font -->
@@ -41,7 +41,13 @@
 
 		<!-- START PRELOADER -->
 		<div class="preloaders">
-			<span class="loader"></span>
+			<div class="education-loader" role="status" aria-label="ওয়েবসাইট লোড হচ্ছে">
+				<span class="loader-book">
+					<span class="loader-page loader-page-left"></span>
+					<span class="loader-page loader-page-right"></span>
+				</span>
+				<span class="loader-pencil"><i></i></span>
+			</div>
 		</div>
 		<!-- END PRELOADER -->
 
@@ -51,49 +57,49 @@
 				<div class="row">
 					<div class="col-20 align-self-center">
 						<div class="site-logo">
-							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.jpeg') }}" alt="Pashchim Dagori Ideal School"></a>
+							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School"></a>
 						</div>
 					</div><!--- END Col -->
 
 					<div class="col-60 d-flex">
 						<nav id="main-menu">
 							<ul>
-								<li><a href="{{ route('home') }}">Home</a></li>
-								<li><a href="{{ route('about') }}">About</a></li>
-								<li><a href="{{ route('instructor') }}">Teachers</a></li>
-								<li class="menu-item-has-children"><a href="#">Pages</a>
+								<li><a href="{{ route('home') }}">হোম</a></li>
+								<li><a href="{{ route('about') }}">আমাদের সম্পর্কে</a></li>
+								<li><a href="{{ route('instructor') }}">শিক্ষকমণ্ডলী</a></li>
+								<li class="menu-item-has-children"><a href="#">অন্যান্য</a>
 									<ul>
-										<li><a href="{{ route('pricing') }}">Pricing Plan</a></li>
-										<li><a href="{{ route('faq') }}">Faq Page</a></li>
+										<li><a href="{{ route('faq') }}">জিজ্ঞাসা</a></li>
+										<li><a href="{{ route('privacy-policy') }}">গোপনীয়তা নীতি</a></li>
+										<li><a href="{{ route('terms-and-conditions') }}">শর্তাবলি</a></li>
 									</ul>
 								</li>
-								<li><a href="{{ route('blog') }}">Blog</a></li>
-								<li><a href="{{ route('contact') }}">Contact</a></li>
+								<li><a href="{{ route('blog') }}">সংবাদ</a></li>
+								<li><a href="{{ route('contact') }}">যোগাযোগ</a></li>
 							</ul>
 						</nav>
 					</div><!--- END Col -->
 
 					<div class="col-20 d-none d-xl-block text-end align-self-center">
-						@auth
-							<a href="{{ route('dashboard') }}" class="header-btn">Dashboard</a>
-						@else
-							<a href="{{ route('login') }}" class="header-btn">Sign In</a>
-							<a href="{{ route('register') }}" class="btn_one">Sign Up</a>
-						@endauth
+						<div class="header-contact">
+							<span>বিদ্যালয় সংক্রান্ত তথ্যের জন্য</span>
+							<a href="tel:+8801772849386">01772-849386</a>
+						</div>
 					</div><!--- END Col -->
 
 					<ul class="mobile_menu">
-						<li><a href="{{ route('home') }}">Home</a></li>
-						<li><a href="{{ route('about') }}">About</a></li>
-						<li><a href="{{ route('instructor') }}">Teachers</a></li>
-						<li><a href="#">Pages</a>
+						<li><a href="{{ route('home') }}">হোম</a></li>
+						<li><a href="{{ route('about') }}">আমাদের সম্পর্কে</a></li>
+						<li><a href="{{ route('instructor') }}">শিক্ষকমণ্ডলী</a></li>
+						<li><a href="#">অন্যান্য</a>
 							<ul class="sub-menu">
-								<li><a href="{{ route('pricing') }}">Pricing Plan</a></li>
-								<li><a href="{{ route('faq') }}">Faq Page</a></li>
+								<li><a href="{{ route('faq') }}">জিজ্ঞাসা</a></li>
+								<li><a href="{{ route('privacy-policy') }}">গোপনীয়তা নীতি</a></li>
+								<li><a href="{{ route('terms-and-conditions') }}">শর্তাবলি</a></li>
 							</ul>
 						</li>
-						<li><a href="{{ route('blog') }}">Blog</a></li>
-						<li><a href="{{ route('contact') }}">Contact</a></li>
+						<li><a href="{{ route('blog') }}">সংবাদ</a></li>
+						<li><a href="{{ route('contact') }}">যোগাযোগ</a></li>
 					</ul>
 				</div><!--- END ROW -->
 			</div><!--- END CONTAINER -->
@@ -108,8 +114,8 @@
 				<div class="row">
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single_footer">
-							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.jpeg') }}" alt="Pashchim Dagori Ideal School"></a>
-							<p>Pashchim Dagori Ideal School is committed to providing high-quality education in a safe, supportive, and stimulating learning environment. We nurture academic excellence, creativity, confidence, and strong moral values while supporting each student in reaching their full potential.</p>
+							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School"></a>
+							<p>পাশ্চিম ডাগরী আইডিয়াল স্কুল নিরাপদ ও সহায়ক পরিবেশে মানসম্মত শিক্ষা, সৃজনশীলতা, আত্মবিশ্বাস এবং নৈতিক মূল্যবোধ গড়ে তুলতে কাজ করে।</p>
 							<div class="social_profile">
 								<ul>
 									<li><a class="f_facebook" href="#"><i class="fa-solid fa-x"></i></a></li>
@@ -122,21 +128,23 @@
 					</div><!--- END COL -->
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single_footer">
-							<h4>About School</h4>
+							<h4>বিদ্যালয় সম্পর্কে</h4>
 							<ul>
-								<li><a href="{{ route('about') }}">About us</a></li>
-								<li><a href="{{ route('instructor') }}">Our Teachers</a></li>
-								<li><a href="{{ route('faq') }}">Asked Question</a></li>
-								<li><a href="{{ route('contact') }}">Contact us</a></li>
+								<li><a href="{{ route('about') }}">আমাদের সম্পর্কে</a></li>
+								<li><a href="{{ route('instructor') }}">আমাদের শিক্ষক</a></li>
+								<li><a href="{{ route('faq') }}">সাধারণ জিজ্ঞাসা</a></li>
+								<li><a href="{{ route('privacy-policy') }}">গোপনীয়তা নীতি</a></li>
+								<li><a href="{{ route('terms-and-conditions') }}">শর্তাবলি</a></li>
+								<li><a href="{{ route('contact') }}">যোগাযোগ করুন</a></li>
 							</ul>
 						</div>
 					</div><!--- END COL -->
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single_footer">
-							<h4>Contact Info</h4>
+							<h4>যোগাযোগের তথ্য</h4>
 							<div class="sf_contact">
 								<span class="ti-map"></span>
-								<p>Pashchim Dagori, Mirzapur, Gazipur Sadar, Gazipur</p>
+								<p>পাশ্চিম ডাগরী, মির্জাপুর, গাজীপুর সদর, গাজীপুর</p>
 							</div>
 							<div class="sf_contact">
 								<span class="ti-mobile"></span>
@@ -144,7 +152,7 @@
 							</div>
 							<div class="sf_contact">
 								<span class="ti-mobile"></span>
-								<p><a href="https://wa.me/8801772849386">Contact Whatsapp</a></p>
+								<p><a href="https://wa.me/8801772849386">হোয়াটসঅ্যাপে যোগাযোগ</a></p>
 							</div>
 						</div>
 					</div><!--- END COL -->
@@ -156,7 +164,7 @@
 		<!-- START FOOTER COPYRIGHT -->
 		<div class="foot_copy">
 			<div class="footer_copyright">
-				<p>&copy; {{ date('Y') }}. All Rights Reserved by Pashchim Dagori Ideal School</p>
+				<p>&copy; {{ date('Y') }}। পাশ্চিম ডাগরী আইডিয়াল স্কুল। সর্বস্বত্ব সংরক্ষিত।</p>
 			</div>
 		</div>
 		<!-- END FOOTER COPYRIGHT -->

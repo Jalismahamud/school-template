@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'Message Sent Successfully - Pashchim Dagori Ideal School')
+@section('title', 'বার্তা পাঠানো হয়েছে - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -48,8 +48,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 col-sm-12 col-xs-12 text-center">
 					<div class="hero-text">
-						<h1>Your Mail Has Been Send Successfully.</h1>
-						<a class="back-home" href="{{ route('home') }}">Back To Home</a>
+						<h1>আপনার বার্তা সফলভাবে পাঠানো হয়েছে।</h1>
+						<a class="back-home" href="{{ route('home') }}">হোমে ফিরুন</a>
 					</div>
 				</div>
 			</div>

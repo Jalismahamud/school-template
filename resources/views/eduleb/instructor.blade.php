@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'Our Teachers - Pashchim Dagori Ideal School')
+@section('title', 'আমাদের শিক্ষক - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -9,10 +9,10 @@
 			<div class="container">
 				<div class="col-lg-10 offset-lg-1 text-center">
 					<div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<h1>Our Teachers</h1>
+						<h1>আমাদের শিক্ষক</h1>
 						<ul>
-							<li><a href="{{ route('home') }}">Home</a></li>
-							<li> / teachers</li>
+							<li><a href="{{ route('home') }}">হোম</a></li>
+							<li> / শিক্ষক</li>
 						</ul>
 					</div><!-- //.HERO-TEXT -->
 				</div><!--- END COL -->
