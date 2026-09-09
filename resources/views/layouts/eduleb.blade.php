@@ -6,9 +6,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Eduleb - Education HTML Template">
-		<meta name="keywords" content="agency, business, corporate, creative, html5, modern, multipurpose, One Page, parallax, startup">
-		<title>@yield('title', 'Eduleb - Education HTML Template')</title>
+		<meta name="description" content="Pashchim Dagori Ideal School is committed to providing high-quality education in a safe, supportive, and stimulating learning environment.">
+		<meta name="keywords" content="school, education, Pashchim Dagori Ideal School, Mirzapur, Gazipur">
+		<title>@yield('title', 'Pashchim Dagori Ideal School')</title>
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
 		<!-- Google Font -->
@@ -29,6 +29,7 @@
 		<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
 		<!-- Style CSS -->
 		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+		<link rel="stylesheet" href="{{ asset('assets/css/school.css') }}">
 		@stack('styles')
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -50,7 +51,7 @@
 				<div class="row">
 					<div class="col-20 align-self-center">
 						<div class="site-logo">
-							<a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo.png') }}" alt=""></a>
+							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School" onerror="this.onerror=null;this.src='{{ asset('assets/img/logo.png') }}';"></a>
 						</div>
 					</div><!--- END Col -->
 
@@ -143,8 +144,8 @@
 				<div class="row">
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single_footer">
-							<a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo.png') }}" alt=""></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim.</p>
+							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School" onerror="this.onerror=null;this.src='{{ asset('assets/img/logo.png') }}';"></a>
+							<p>Pashchim Dagori Ideal School is committed to providing high-quality education in a safe, supportive, and stimulating learning environment. We nurture academic excellence, creativity, confidence, and strong moral values while supporting each student in reaching their full potential.</p>
 							<div class="social_profile">
 								<ul>
 									<li><a class="f_facebook" href="#"><i class="fa-solid fa-x"></i></a></li>
@@ -186,19 +187,15 @@
 							<h4>Contact Info</h4>
 							<div class="sf_contact">
 								<span class="ti-map"></span>
-								<p>2570 Quadra Street Victoria Road, New York, Canada</p>
+								<p>Pashchim Dagori, Mirzapur, Gazipur Sadar, Gazipur</p>
 							</div>
 							<div class="sf_contact">
 								<span class="ti-mobile"></span>
-								<p>+88 457 845 695</p>
+								<p><a href="tel:+8801772849386">+880 1772-849386</a></p>
 							</div>
 							<div class="sf_contact">
 								<span class="ti-mobile"></span>
-								<p><a href="tel:+88457845695">Contact Whatsapp</a></p>
-							</div>
-							<div class="sf_contact">
-								<span class="ti-email"></span>
-								<p>example@yourmail.com</p>
+								<p><a href="https://wa.me/8801772849386">Contact Whatsapp</a></p>
 							</div>
 						</div>
 					</div><!--- END COL -->
@@ -218,7 +215,7 @@
 		<!-- START FOOTER COPYRIGHT -->
 		<div class="foot_copy">
 			<div class="footer_copyright">
-				<p>&copy; {{ date('Y') }}. All Rights Reserved by <a href="https://bestwpware.com/">Bestwpware</a> &bull; Distributed by <a href="https://themewagon.com">ThemeWagon</a></p>
+				<p>&copy; {{ date('Y') }}. All Rights Reserved by Pashchim Dagori Ideal School</p>
 			</div>
 		</div>
 		<!-- END FOOTER COPYRIGHT -->

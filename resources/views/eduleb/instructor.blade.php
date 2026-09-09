@@ -20,6 +20,8 @@
 		</section>
 		<!-- END SECTION TOP -->
 
+		@include('partials.teachers')
+
 		<!-- START TEAM -->
 		<section class="team_area section-padding">
 			<div class="container">

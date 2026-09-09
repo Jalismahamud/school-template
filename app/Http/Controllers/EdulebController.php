@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
+use App\Models\Teacher;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -14,6 +16,8 @@ class EdulebController extends Controller
             'courses' => $this->courses(),
             'instructors' => $this->instructors(),
             'posts' => $this->posts(),
+            'teachers' => Teacher::active()->ordered()->get(),
+            'students' => Student::active()->ordered()->get(),
         ]);
     }
 
@@ -23,6 +27,8 @@ class EdulebController extends Controller
             'courses' => $this->courses(),
             'instructors' => $this->instructors(),
             'posts' => $this->posts(),
+            'teachers' => Teacher::active()->ordered()->get(),
+            'students' => Student::active()->ordered()->get(),
         ]);
     }
 
@@ -52,6 +58,7 @@ class EdulebController extends Controller
     {
         return view('eduleb.instructor', [
             'instructors' => $this->instructors(),
+            'teachers' => Teacher::active()->ordered()->get(),
         ]);
     }
 
