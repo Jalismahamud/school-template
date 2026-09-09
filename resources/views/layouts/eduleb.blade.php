@@ -51,41 +51,23 @@
 				<div class="row">
 					<div class="col-20 align-self-center">
 						<div class="site-logo">
-							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School" onerror="this.onerror=null;this.src='{{ asset('assets/img/logo.png') }}';"></a>
+							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.jpeg') }}" alt="Pashchim Dagori Ideal School"></a>
 						</div>
 					</div><!--- END Col -->
 
 					<div class="col-60 d-flex">
 						<nav id="main-menu">
 							<ul>
-								<li class="menu-item-has-children"><a href="#">Home</a>
-									<ul>
-										<li><a href="{{ route('home') }}">Home 01</a></li>
-										<li><a href="{{ route('home2') }}">Home 02</a></li>
-									</ul>
-								</li>
+								<li><a href="{{ route('home') }}">Home</a></li>
 								<li><a href="{{ route('about') }}">About</a></li>
-								<li class="menu-item-has-children"><a href="{{ route('course') }}">Course</a>
-									<ul>
-										<li><a href="{{ route('course') }}">Course</a></li>
-										<li><a href="{{ route('course.details', 1) }}">Course Details</a></li>
-									</ul>
-								</li>
+								<li><a href="{{ route('instructor') }}">Teachers</a></li>
 								<li class="menu-item-has-children"><a href="#">Pages</a>
 									<ul>
-										<li><a href="{{ route('instructor') }}">Instructor</a></li>
-										<li><a href="{{ route('instructor.details', 1) }}">Instructor Details</a></li>
 										<li><a href="{{ route('pricing') }}">Pricing Plan</a></li>
 										<li><a href="{{ route('faq') }}">Faq Page</a></li>
-										<li><a href="{{ route('not-found') }}">404</a></li>
 									</ul>
 								</li>
-								<li class="menu-item-has-children"><a href="{{ route('blog') }}">Blog</a>
-									<ul>
-										<li><a href="{{ route('blog') }}">Blog</a></li>
-										<li><a href="{{ route('blog.single', 1) }}">Blog Details</a></li>
-									</ul>
-								</li>
+								<li><a href="{{ route('blog') }}">Blog</a></li>
 								<li><a href="{{ route('contact') }}">Contact</a></li>
 							</ul>
 						</nav>
@@ -101,34 +83,16 @@
 					</div><!--- END Col -->
 
 					<ul class="mobile_menu">
-						<li><a href="#">Home</a>
-							<ul class="sub-menu">
-								<li><a href="{{ route('home') }}">Home 01</a></li>
-								<li><a href="{{ route('home2') }}">Home 02</a></li>
-							</ul>
-						</li>
+						<li><a href="{{ route('home') }}">Home</a></li>
 						<li><a href="{{ route('about') }}">About</a></li>
-						<li><a href="#">Course</a>
-							<ul class="sub-menu">
-								<li><a href="{{ route('course') }}">Course</a></li>
-								<li><a href="{{ route('course.details', 1) }}">Course Deails</a></li>
-							</ul>
-						</li>
+						<li><a href="{{ route('instructor') }}">Teachers</a></li>
 						<li><a href="#">Pages</a>
 							<ul class="sub-menu">
-								<li><a href="{{ route('instructor') }}">Instructor</a></li>
-								<li><a href="{{ route('instructor.details', 1) }}">Instructor Details</a></li>
 								<li><a href="{{ route('pricing') }}">Pricing Plan</a></li>
 								<li><a href="{{ route('faq') }}">Faq Page</a></li>
-								<li><a href="{{ route('not-found') }}">404</a></li>
 							</ul>
 						</li>
-						<li><a href="{{ route('blog') }}">Blog</a>
-							<ul class="sub-menu">
-								<li><a href="{{ route('blog') }}">Blog</a></li>
-								<li><a href="{{ route('blog.single', 1) }}">Blog Details</a></li>
-							</ul>
-						</li>
+						<li><a href="{{ route('blog') }}">Blog</a></li>
 						<li><a href="{{ route('contact') }}">Contact</a></li>
 					</ul>
 				</div><!--- END ROW -->
@@ -144,7 +108,7 @@
 				<div class="row">
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single_footer">
-							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School" onerror="this.onerror=null;this.src='{{ asset('assets/img/logo.png') }}';"></a>
+							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.jpeg') }}" alt="Pashchim Dagori Ideal School"></a>
 							<p>Pashchim Dagori Ideal School is committed to providing high-quality education in a safe, supportive, and stimulating learning environment. We nurture academic excellence, creativity, confidence, and strong moral values while supporting each student in reaching their full potential.</p>
 							<div class="social_profile">
 								<ul>
@@ -156,29 +120,14 @@
 							</div>
 						</div>
 					</div><!--- END COL -->
-					<div class="col-lg-2 col-sm-6 col-xs-12">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single_footer">
-							<h4>About Eduleb</h4>
+							<h4>About School</h4>
 							<ul>
 								<li><a href="{{ route('about') }}">About us</a></li>
-								<li><a href="{{ route('instructor') }}">Instructor Registration</a></li>
-								<li><a href="{{ route('instructor') }}">Become A Teacher</a></li>
-								<li><a href="{{ route('instructor') }}">All Instrustors</a></li>
+								<li><a href="{{ route('instructor') }}">Our Teachers</a></li>
 								<li><a href="{{ route('faq') }}">Asked Question</a></li>
 								<li><a href="{{ route('contact') }}">Contact us</a></li>
-							</ul>
-						</div>
-					</div><!--- END COL -->
-					<div class="col-lg-2 col-sm-6 col-xs-12">
-						<div class="single_footer">
-							<h4>Popular Courese</h4>
-							<ul>
-								<li><a href="{{ route('course') }}">Development</a></li>
-								<li><a href="{{ route('course') }}">Arts & design</a></li>
-								<li><a href="{{ route('course') }}">Visual Design</a></li>
-								<li><a href="{{ route('course') }}">Graphic Design</a></li>
-								<li><a href="{{ route('course') }}">Code Inspection</a></li>
-								<li><a href="{{ route('course') }}">Digital Marketing</a></li>
 							</ul>
 						</div>
 					</div><!--- END COL -->
@@ -197,14 +146,6 @@
 								<span class="ti-mobile"></span>
 								<p><a href="https://wa.me/8801772849386">Contact Whatsapp</a></p>
 							</div>
-						</div>
-					</div><!--- END COL -->
-					<div class="col-lg-2 col-sm-6 col-xs-12">
-						<div class="single_footer">
-							<h4>Download App</h4>
-							<p>Download our app from app store and goole play store.</p>
-							<a href="{{ route('home') }}"><img src="{{ asset('assets/img/google-play.jpg') }}" class="foot_img" alt=""></a>
-							<a href="{{ route('home') }}"><img src="{{ asset('assets/img/app-store.jpg') }}" class="foot_img" alt=""></a>
 						</div>
 					</div><!--- END COL -->
 				</div><!--- END ROW -->

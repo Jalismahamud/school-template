@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('admin.students.index')" :active="request()->routeIs('admin.students.*')">
                         {{ __('Talent Pool') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.blogs.index')" :active="request()->routeIs('admin.blogs.*')">
+                        {{ __('Blog') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -81,6 +84,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('admin.students.index')" :active="request()->routeIs('admin.students.*')">
                 {{ __('Talent Pool') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.blogs.index')" :active="request()->routeIs('admin.blogs.*')">
+                {{ __('Blog') }}
             </x-responsive-nav-link>
         </div>
 

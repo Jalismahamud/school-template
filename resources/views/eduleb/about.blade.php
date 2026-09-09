@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'About - Eduleb')
+@section('title', 'About - Pashchim Dagori Ideal School')
 
 @section('content')
 
@@ -72,15 +72,14 @@
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="ab_content">
-						<h2>We Are Providing The Online Course In Global World</h2>
-						<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
-						<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
+						<h2>We Are Providing Quality Education For A Better Future</h2>
+						<p>Pashchim Dagori Ideal School offers a brand new approach to the most basic learning paradigms. We nurture academic excellence, creativity, confidence, and strong moral values.</p>
 						<ul>
-							<li><span class="ti-check"></span> Get access to <b>12,000+</b> of our top courses</li>
-							<li><span class="ti-check"></span> Popular topic to learn now in our online courses for student</li>
-							<li><span class="ti-check"></span> Find the right instructor for you</li>
+							<li><span class="ti-check"></span> Safe and supportive learning environment</li>
+							<li><span class="ti-check"></span> Experienced and dedicated teachers</li>
+							<li><span class="ti-check"></span> Focus on academic excellence and moral values</li>
 						</ul>
-						<a class="btn_one" href="{{ route('course') }}">View All Courses <i class="ti-arrow-top-right"></i></a>
+						<a class="btn_one" href="{{ route('instructor') }}">Meet Our Teachers <i class="ti-arrow-top-right"></i></a>
 					</div>
 				</div><!--- END COL -->
 			</div><!--- END ROW -->

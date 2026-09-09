@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'Eduleb - Education HTML Template')
+@section('title', 'Pashchim Dagori Ideal School')
 
 @section('content')
 
@@ -10,14 +10,8 @@
 				<div class="row">
 				  <div class="col-lg-6 col-sm-12 col-xs-12">
 					<div class="hero-text ht_top">
-						<h1><span>Smart Study</span> Where Knowledge Meets the Web</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipiscing elit tempor ut labore</p>
-					</div>
-					<div class="home_sb">
-						<form action="{{ route('course') }}" method="GET" class="banner_subs">
-							<input type="text" name="q" class="form-control home_si" placeholder="Search your course here" required="required">
-							<button type="submit" class="subscribe__btn">Search <i class="fa fa-paper-plane-o"></i></button>
-						</form>
+						<h1><span>Pashchim Dagori Ideal School</span></h1>
+						<p>Committed to providing high-quality education in a safe, supportive, and stimulating learning environment.</p>
 					</div>
 				  </div><!--- END COL -->
 				  <div class="col-lg-6 col-sm-12 col-xs-12">
@@ -43,7 +37,7 @@
 						<div class="single-counter">
 							<span class="ti-folder sc_one"></span>
 							<h2 class="counter-num">134</h2>
-							<p>Our Online Course</p>
+							<p>Our Teachers</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6 col-xs-12">
@@ -124,88 +118,20 @@
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="ab_content">
-						<h2>We Are Providing The Online Course In Global World</h2>
-						<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
-						<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
+						<h2>We Are Providing Quality Education For A Better Future</h2>
+						<p>Pashchim Dagori Ideal School offers a brand new approach to the most basic learning paradigms. We nurture academic excellence, creativity, confidence, and strong moral values.</p>
 						<ul>
-							<li><span class="ti-check"></span> Get access to <b>12,000+</b> of our top courses</li>
-							<li><span class="ti-check"></span> Popular topic to learn now in our online courses for student</li>
-							<li><span class="ti-check"></span> Find the right instructor for you</li>
+							<li><span class="ti-check"></span> Safe and supportive learning environment</li>
+							<li><span class="ti-check"></span> Experienced and dedicated teachers</li>
+							<li><span class="ti-check"></span> Focus on academic excellence and moral values</li>
 						</ul>
-						<a class="btn_one" href="{{ route('course') }}">View All Courses <i class="ti-arrow-top-right"></i></a>
+						<a class="btn_one" href="{{ route('about') }}">Learn More <i class="ti-arrow-top-right"></i></a>
 					</div>
 				</div><!--- END COL -->
 			</div><!--- END ROW -->
 		</div><!--- END CONTAINER -->
 	</section>
 	<!-- END ABOUT US -->
-
-	<!-- START CATEGORY -->
-	<section class="top_cat__area section-padding" style="background-image: url({{ asset('assets/img/bg/section-2.jpg') }});  background-size:cover; background-position: center center;">
-		<div class="container">
-			<div class="section-title text-center">
-				<h2>Find out by popular Categories</h2>
-				<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-					<div class="cat_list">
-						<ul>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e1.png') }}" alt="category-image" /> Digital Marketing</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e2.png') }}" alt="category-image" /> UI/UX Design</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e3.png') }}" alt="category-image" /> 3D Visual Design</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e4.png') }}" alt="category-image" /> Content Marketing</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e5.png') }}" alt="category-image" /> Photography</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e6.png') }}" alt="category-image" /> Photo Lifestyle</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e7.png') }}" alt="category-image" /> Art & Design</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e8.png') }}" alt="category-image" /> Finance & Banking</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e9.png') }}" alt="category-image" /> Graphic Design</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e2.png') }}" alt="category-image" /> Interior Design</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e3.png') }}" alt="category-image" /> 3D Visual Design</a></li>
-							<li><a href="{{ route('course') }}"><img src="{{ asset('assets/img/e7.png') }}" alt="category-image" /> Art & Design</a></li>
-						</ul>
-					</div>
-				</div><!--- END COL -->
-			</div><!--- END ROW -->
-		</div><!--- END CONTAINER -->
-	</section>
-	<!-- END CATEGORY -->
-
-		<!-- START COURSE -->
-		<section class="home_course section-padding">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-sm-6 col-xs-12">
-						<div class="section-title">
-							<h2>Join with more than <b>80,000+ </b> <br />Courses & Learning creators.</h2>
-						</div>
-					</div><!--- END COL -->
-					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<div class="cour_btn">
-							<a href="{{ route('course') }}" class="btn_one">View all Courses <i class="ti-arrow-top-right"></i></a>
-						</div>
-					</div><!--- END COL -->
-				</div><!--- END ROW -->
-				<div class="row">
-					@foreach ($courses as $course)
-					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<div class="single_course">
-							<div class="single_c_img">
-								<img src="{{ asset('assets/img/'.$course['image']) }}" class="img-fluid" alt="course-image" />
-								<span>{{ $course['category'] }}</span>
-							</div>
-							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-							<h4><a href="{{ route('course.details', $course['id']) }}">{{ $course['title'] }}</a></h4>
-							<p><span class="ti-book"> </span> {{ $course['lessons'] }} Course</p>
-							<p><span class="ti-alarm-clock"> </span>{{ $course['duration'] }}</p>
-							<div class="price">Course Fee - {{ $course['price'] }}</div>
-						</div>
-					</div><!-- END COL -->
-					@endforeach
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->
-		</section>
-		<!-- END COURSE -->
 
 		<!-- START COMPANY PARTNER LOGO  -->
 		<div class="partner-logo section-padding">
@@ -258,25 +184,19 @@
 			<div class="row">
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="ab_content">
-						<h2>Why Choose Us For Your Online Education Courses</h2>
-						<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
-						<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
+						<h2>Why Choose Pashchim Dagori Ideal School</h2>
+						<p>We are committed to providing high-quality education in a safe, supportive, and stimulating learning environment for every student.</p>
 						<ul>
-							<li><span class="ti-check"></span> Get access to <b>12,000+</b> of our top courses</li>
-							<li><span class="ti-check"></span> Popular topic to learn now in our online courses for student</li>
-							<li><span class="ti-check"></span> Find the right instructor for you</li>
+							<li><span class="ti-check"></span> Nurturing academic excellence and creativity</li>
+							<li><span class="ti-check"></span> Building confidence and strong moral values</li>
+							<li><span class="ti-check"></span> Supporting every student to reach their full potential</li>
 						</ul>
-						<a class="btn_one" href="{{ route('course') }}">View All Courses <i class="ti-arrow-top-right"></i></a>
+						<a class="btn_one" href="{{ route('about') }}">Learn More <i class="ti-arrow-top-right"></i></a>
 					</div>
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="ab_img">
 						<img src="{{ asset('assets/img/about3.png') }}" class="img-fluid" alt="image">
-						<div class="home_ps2">
-							<span class="ti-book"></span>
-							<h2>3300+</h2>
-							<p>Online Course</p>
-						</div>
 					</div>
 				</div><!--- END COL -->
 			</div><!--- END ROW -->
@@ -288,7 +208,7 @@
 		<section class="testi_area section-padding">
 			<div class="container">
 				<div class="section-title">
-					<h2>What Student&rsquo;s Say To Do <br />Their Online Course</h2>
+					<h2>What Parents & Students <br />Say About Us</h2>
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-sm-12 col-xs-12">
@@ -329,22 +249,26 @@
 		</section>
 		<!-- END TESTINUNIALS -->
 
+		@if (($posts ?? collect())->isNotEmpty())
 		<!-- START BLOG -->
 		<section id="blog" class="blog_area section-padding">
 			<div class="container">
 				<div class="section-title text-center">
-					<h2>Latest Blog & news</h2>
-					<p>We offer a brand new approach to the most basic learning paradigms. Choose from a wide range of learning options and gain new skills! Our school is know.</p>
+					<h2>Latest Blog & News</h2>
 				</div>
 				<div class="row">
-					@foreach (($posts ?? []) as $post)
+					@foreach ($posts as $post)
 					<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 						<div class="single_blog">
-							<img src="{{ asset('assets/img/'.$post['image']) }}" class="img-fluid" alt="image" />
+							@if ($post->featured_image)
+								<img src="{{ asset('storage/'.$post->featured_image) }}" class="img-fluid" alt="{{ $post->title }}" />
+							@else
+								<img src="{{ asset('assets/img/blog/1.jpg') }}" class="img-fluid" alt="{{ $post->title }}" />
+							@endif
 							<div class="content_box">
-								<span>{{ $post['date'] }} | <a href="{{ route('blog') }}">{{ $post['category'] }}</a></span>
-								<h2><a href="{{ route('blog.single', $post['id']) }}">{{ $post['title'] }}</a></h2>
-								<a class="btn_one" href="{{ route('blog.single', $post['id']) }}">Read More <i class="ti-arrow-top-right"></i></a>
+								<span>{{ optional($post->published_at)->format('M d, Y') }} @if($post->category) | <a href="{{ route('blog') }}">{{ $post->category }}</a>@endif</span>
+								<h2><a href="{{ route('blog.single', $post->slug) }}">{{ $post->title }}</a></h2>
+								<a class="btn_one" href="{{ route('blog.single', $post->slug) }}">Read More <i class="ti-arrow-top-right"></i></a>
 							</div>
 						</div>
 					</div><!-- END COL-->
@@ -353,5 +277,6 @@
 			</div><!-- END CONTAINER  -->
 		</section>
 		<!-- END BLOG -->
+		@endif
 
 @endsection

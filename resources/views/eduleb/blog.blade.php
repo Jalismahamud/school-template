@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'Our Blog - Eduleb')
+@section('title', 'Our Blog - Pashchim Dagori Ideal School')
 
 @section('content')
 
@@ -24,19 +24,32 @@
 		<section id="blog" class="blog_area section-padding">
 			<div class="container">
 				<div class="row">
-					@foreach ($posts as $post)
+					@forelse ($posts as $post)
 					<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 						<div class="single_blog">
-							<img src="{{ asset('assets/img/'.$post['image']) }}" class="img-fluid" alt="image" />
+							@if ($post->featured_image)
+								<img src="{{ asset('storage/'.$post->featured_image) }}" class="img-fluid" alt="{{ $post->title }}" />
+							@else
+								<img src="{{ asset('assets/img/blog/1.jpg') }}" class="img-fluid" alt="{{ $post->title }}" />
+							@endif
 							<div class="content_box">
-								<span>{{ $post['date'] }} | <a href="{{ route('blog.single', $post['id']) }}">{{ $post['category'] }}</a></span>
-								<h2><a href="{{ route('blog.single', $post['id']) }}">{{ $post['title'] }}</a></h2>
-								<a class="btn_one" href="{{ route('blog.single', $post['id']) }}">Read More <i class="ti-arrow-top-right"></i></a>
+								<span>{{ optional($post->published_at)->format('M d, Y') }} @if($post->category) | <a href="{{ route('blog') }}">{{ $post->category }}</a>@endif</span>
+								<h2><a href="{{ route('blog.single', $post->slug) }}">{{ $post->title }}</a></h2>
+								<a class="btn_one" href="{{ route('blog.single', $post->slug) }}">Read More <i class="ti-arrow-top-right"></i></a>
 							</div>
 						</div>
 					</div><!-- END COL-->
-					@endforeach
+					@empty
+					<div class="col-12 text-center">
+						<p>No blog posts yet.</p>
+					</div>
+					@endforelse
 				</div><!-- / END ROW -->
+				<div class="row">
+					<div class="col-12">
+						{{ $posts->links() }}
+					</div>
+				</div>
 			</div><!-- END CONTAINER  -->
 		</section>
 		<!-- END BLOG -->

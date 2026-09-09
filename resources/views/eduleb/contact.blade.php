@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'Get In Touch - Eduleb')
+@section('title', 'Get In Touch - Pashchim Dagori Ideal School')
 
 @section('content')
 

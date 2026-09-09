@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'Your Mail Has Been Send Successfully - Eduleb')
+@section('title', 'Message Sent Successfully - Pashchim Dagori Ideal School')
 
 @section('content')
 
