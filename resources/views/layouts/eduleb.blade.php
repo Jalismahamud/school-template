@@ -6,44 +6,44 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="পাশ্চিম ডাগরী আইডিয়াল স্কুল একটি নিরাপদ, সহায়ক ও মানসম্মত শিক্ষার পরিবেশ গড়ে তুলতে প্রতিশ্রুতিবদ্ধ।">
-		<meta name="keywords" content="বিদ্যালয়, শিক্ষা, পাশ্চিম ডাগরী আইডিয়াল স্কুল, মির্জাপুর, গাজীপুর">
-		<meta name="author" content="পাশ্চিম ডাগরী আইডিয়াল স্কুল">
+		<meta name="description" content="{{ $schoolSettings->footer_description }}">
+		<meta name="keywords" content="বিদ্যালয়, শিক্ষা, {{ $schoolSettings->school_name }}, মির্জাপুর, গাজীপুর">
+		<meta name="author" content="{{ $schoolSettings->school_name }}">
 		<meta name="robots" content="index, follow">
 		<link rel="canonical" href="{{ url()->current() }}">
-		<link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
-		<link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
+		<link rel="icon" type="image/png" href="{{ $schoolSettings->logo_url }}">
+		<link rel="apple-touch-icon" href="{{ $schoolSettings->logo_url }}">
 		<meta property="og:type" content="website">
 		<meta property="og:locale" content="bn_BD">
 		<meta property="og:title" content="@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')">
-		<meta property="og:description" content="পাশ্চিম ডাগরী আইডিয়াল স্কুলের শিক্ষা, শিক্ষক, সংবাদ ও যোগাযোগের তথ্য।">
+		<meta property="og:description" content="{{ $schoolSettings->footer_description }}">
 		<meta property="og:url" content="{{ url()->current() }}">
-		<meta property="og:site_name" content="পাশ্চিম ডাগরী আইডিয়াল স্কুল">
-		<meta property="og:image" content="{{ asset('images/logo.png') }}">
+		<meta property="og:site_name" content="{{ $schoolSettings->school_name }}">
+		<meta property="og:image" content="{{ $schoolSettings->logo_url }}">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')">
-		<meta name="twitter:description" content="পাশ্চিম ডাগরী আইডিয়াল স্কুলের শিক্ষা, শিক্ষক, সংবাদ ও যোগাযোগের তথ্য।">
-		<meta name="twitter:image" content="{{ asset('images/logo.png') }}">
+		<meta name="twitter:description" content="{{ $schoolSettings->footer_description }}">
+		<meta name="twitter:image" content="{{ $schoolSettings->logo_url }}">
 		<script type="application/ld+json">
 		{!! json_encode([
 			'@context' => 'https://schema.org',
 			'@type' => 'EducationalOrganization',
-			'name' => 'পাশ্চিম ডাগরী আইডিয়াল স্কুল',
+			'name' => $schoolSettings->school_name,
 			'alternateName' => 'Pashchim Dagori Ideal School',
 			'url' => url('/'),
-			'logo' => asset('images/logo.png'),
+			'logo' => $schoolSettings->logo_url,
 			'founder' => [
 				'@type' => 'Person',
 				'name' => 'আলহাজ্ব মোঃ সুরুজ্জামান মাস্টার',
 			],
 			'address' => [
 				'@type' => 'PostalAddress',
-				'streetAddress' => 'পাশ্চিম ডাগরী, মির্জাপুর',
+				'streetAddress' => $schoolSettings->address,
 				'addressLocality' => 'গাজীপুর সদর',
 				'addressRegion' => 'গাজীপুর',
 				'addressCountry' => 'BD',
 			],
-			'telephone' => '+8801772849386',
+			'telephone' => $schoolSettings->phone,
 		], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) !!}
 		</script>
 		<title>@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')</title>
@@ -95,7 +95,7 @@
 				<div class="row">
 					<div class="col-20 align-self-center">
 						<div class="site-logo">
-							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School"></a>
+							<a href="{{ route('home') }}"><img src="{{ $schoolSettings->logo_url }}" alt="{{ $schoolSettings->school_name }}"></a>
 						</div>
 					</div><!--- END Col -->
 
@@ -120,8 +120,8 @@
 
 					<div class="col-20 d-none d-xl-block text-end align-self-center">
 						<div class="header-contact">
-							<span>বিদ্যালয় সংক্রান্ত তথ্যের জন্য</span>
-							<a href="tel:+8801772849386">01772-849386</a>
+							<span>{{ $schoolSettings->header_label }}</span>
+							<a href="tel:{{ preg_replace('/[^0-9+]/', '', $schoolSettings->phone) }}">{{ $schoolSettings->phone }}</a>
 						</div>
 					</div><!--- END Col -->
 
@@ -152,8 +152,8 @@
 				<div class="row">
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="single_footer">
-							<a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Pashchim Dagori Ideal School"></a>
-							<p>পাশ্চিম ডাগরী আইডিয়াল স্কুল নিরাপদ ও সহায়ক পরিবেশে মানসম্মত শিক্ষা, সৃজনশীলতা, আত্মবিশ্বাস এবং নৈতিক মূল্যবোধ গড়ে তুলতে কাজ করে।</p>
+							<a href="{{ route('home') }}"><img src="{{ $schoolSettings->logo_url }}" alt="{{ $schoolSettings->school_name }}"></a>
+							<p>{{ $schoolSettings->footer_description }}</p>
 							<div class="social_profile">
 								<ul>
 									<li><a class="f_facebook" href="#"><i class="fa-solid fa-x"></i></a></li>
@@ -182,15 +182,15 @@
 							<h4>যোগাযোগের তথ্য</h4>
 							<div class="sf_contact">
 								<span class="ti-map"></span>
-								<p>পাশ্চিম ডাগরী, মির্জাপুর, গাজীপুর সদর, গাজীপুর</p>
+								<p>{{ $schoolSettings->address }}</p>
 							</div>
 							<div class="sf_contact">
 								<span class="ti-mobile"></span>
-								<p><a href="tel:+8801772849386">+880 1772-849386</a></p>
+								<p><a href="tel:{{ preg_replace('/[^0-9+]/', '', $schoolSettings->phone) }}">{{ $schoolSettings->phone }}</a></p>
 							</div>
 							<div class="sf_contact">
 								<span class="ti-mobile"></span>
-								<p><a href="https://wa.me/8801772849386">হোয়াটসঅ্যাপে যোগাযোগ</a></p>
+								<p><a href="{{ $schoolSettings->whatsapp_url }}">হোয়াটসঅ্যাপে যোগাযোগ</a></p>
 							</div>
 						</div>
 					</div><!--- END COL -->

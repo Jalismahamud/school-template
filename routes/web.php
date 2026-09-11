@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\TeacherController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\SchoolSettingController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [EdulebController::class, 'home'])->name('home');
@@ -48,6 +49,8 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('settings', [SchoolSettingController::class, 'edit'])->name('settings.edit');
+    Route::put('settings', [SchoolSettingController::class, 'update'])->name('settings.update');
     Route::resource('teachers', TeacherController::class)->except('show');
     Route::resource('students', StudentController::class)->except('show');
     Route::resource('blogs', BlogController::class)->except('show');

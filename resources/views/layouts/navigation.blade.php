@@ -24,6 +24,9 @@
                     <x-nav-link :href="route('admin.blogs.index')" :active="request()->routeIs('admin.blogs.*')">
                         {{ __('Blog') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.settings.edit')" :active="request()->routeIs('admin.settings.*')">
+                        বিদ্যালয়ের তথ্য
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -87,6 +90,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('admin.blogs.index')" :active="request()->routeIs('admin.blogs.*')">
                 {{ __('Blog') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.settings.edit')" :active="request()->routeIs('admin.settings.*')">
+                বিদ্যালয়ের তথ্য
             </x-responsive-nav-link>
         </div>
 

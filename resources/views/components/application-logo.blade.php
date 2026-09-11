@@ -1,1 +1,2 @@
-<img src="{{ asset('images/logo.png') }}" alt="পাশ্চিম ডাগরী আইডিয়াল স্কুল" {{ $attributes->merge(['class' => 'object-contain']) }}>
+@php($schoolSettings = \App\Models\SchoolSetting::current())
+<img src="{{ $schoolSettings->logo_url }}" alt="{{ $schoolSettings->school_name }}" {{ $attributes->merge(['class' => 'object-contain']) }}>
