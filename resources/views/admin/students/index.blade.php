@@ -59,7 +59,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="4" class="px-6 py-8 text-center text-sm text-gray-500">No students added yet.</td>
+                                <td colspan="5" class="px-6 py-8 text-center text-sm text-gray-500">No students added yet.</td>
                             </tr>
                         @endforelse
                     </tbody>
