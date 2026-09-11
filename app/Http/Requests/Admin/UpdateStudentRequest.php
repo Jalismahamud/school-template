@@ -15,6 +15,8 @@ class UpdateStudentRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:255'],
+            'result_title' => ['nullable', 'string', 'max:255'],
+            'role_number' => ['nullable', 'string', 'max:50'],
             'photo' => ['nullable', 'image', 'max:4096'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
             'is_active' => ['nullable', 'boolean'],

@@ -7,6 +7,18 @@
 </div>
 
 <div>
+    <x-input-label for="result_title" value="Result Title" />
+    <x-text-input id="result_title" name="result_title" type="text" class="mt-1 block w-full" value="{{ old('result_title', $student->result_title ?? '') }}" placeholder="যেমন: বৃত্তিপ্রাপ্ত (সাধারণ গ্রেড)" />
+    <x-input-error :messages="$errors->get('result_title')" class="mt-2" />
+</div>
+
+<div>
+    <x-input-label for="role_number" value="Roll Number" />
+    <x-text-input id="role_number" name="role_number" type="text" class="mt-1 block w-full" value="{{ old('role_number', $student->role_number ?? '') }}" placeholder="যেমন: ৩০৩০৭৫" />
+    <x-input-error :messages="$errors->get('role_number')" class="mt-2" />
+</div>
+
+<div>
     <x-input-label for="photo" value="Photo" />
     <input id="photo" name="photo" type="file" accept="image/*" class="mt-1 block w-full text-sm text-gray-600" />
     <x-input-error :messages="$errors->get('photo')" class="mt-2" />

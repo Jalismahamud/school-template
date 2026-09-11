@@ -8,6 +8,8 @@ class Student extends Model
 {
     protected $fillable = [
         'name',
+        'result_title',
+        'role_number',
         'photo',
         'sort_order',
         'is_active',

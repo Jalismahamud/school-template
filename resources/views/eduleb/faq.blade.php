@@ -74,18 +74,6 @@
 							  </div>
 							</div>
 						  </div><!-- END ACCORDION ITEM  -->
-						  <div class="accordion-item">
-							<h2 class="accordion-header" id="headingFive">
-							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-								প্রতিষ্ঠানটি কে প্রতিষ্ঠা করেছেন?
-							  </button>
-							</h2>
-							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-							  <div class="accordion-body">
-								পাশ্চিম ডাগরী আইডিয়াল স্কুল প্রতিষ্ঠা করেছেন আলহাজ্ব মোঃ সুরুজ্জামান মাস্টার।
-							  </div>
-							</div>
-						  </div><!-- END ACCORDION ITEM  -->
 						</div>
 					</div><!-- END COL  -->
 					<div class="col-lg-5 col-sm-12 col-xs-12">
@@ -94,6 +82,15 @@
 						</div>
 					</div>
 				</div><!--END  ROW  -->
+				<div class="founder-card">
+					<div class="founder-card-icon"><span class="ti-medall-alt"></span></div>
+					<div class="founder-card-content">
+						<span class="founder-card-label">প্রতিষ্ঠাতা</span>
+						<h2>আলহাজ্ব মোঃ সুরুজ্জামান মাস্টার</h2>
+						<p>পাশ্চিম ডাগরী আইডিয়াল স্কুলের প্রতিষ্ঠাতা</p>
+					</div>
+					<a class="founder-card-link" href="{{ route('about') }}" aria-label="প্রতিষ্ঠাতা সম্পর্কে আরও জানুন"><span class="ti-arrow-top-right"></span></a>
+				</div>
 			</div><!--- END CONTAINER -->
 		</section>
 		<!-- END FAQ -->

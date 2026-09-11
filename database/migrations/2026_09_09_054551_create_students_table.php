@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('result_title')->nullable();
+            $table->string('role_number')->nullable();
             $table->string('photo')->nullable();
             $table->unsignedInteger('sort_order')->default(0);
             $table->boolean('is_active')->default(true);

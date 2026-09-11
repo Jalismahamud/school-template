@@ -24,6 +24,7 @@
                         <tr>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Photo</th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Roll Number</th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                             <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
                         </tr>
@@ -39,6 +40,7 @@
                                     @endif
                                 </td>
                                 <td class="px-6 py-4 text-sm text-gray-900">{{ $student->name }}</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">{{ $student->role_number ?: '—' }}</td>
                                 <td class="px-6 py-4 text-sm">
                                     @if ($student->is_active)
                                         <span class="inline-flex px-2 text-xs font-semibold rounded-full bg-green-100 text-green-800">Active</span>

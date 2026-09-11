@@ -25,6 +25,16 @@ class TeacherSeeder extends Seeder
                 'designation' => 'পরিচালক',
                 'sort_order' => 3,
             ],
+            [
+                'name' => 'মোছাঃ ফারজানা ইয়াসমিন',
+                'designation' => 'সহকারী শিক্ষক',
+                'sort_order' => 4,
+            ],
+            [
+                'name' => 'জনাব মো. রাকিবুল হাসান',
+                'designation' => 'সহকারী শিক্ষক',
+                'sort_order' => 5,
+            ],
         ];
 
         foreach ($rows as $row) {
