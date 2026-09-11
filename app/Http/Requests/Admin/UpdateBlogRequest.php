@@ -16,7 +16,7 @@ class UpdateBlogRequest extends FormRequest
         return [
             'title' => ['required', 'string', 'max:255'],
             'category' => ['nullable', 'string', 'max:255'],
-            'featured_image' => ['nullable', 'image', 'max:4096'],
+            'featured_image' => ['nullable', 'image', 'max:5100'],
             'content' => ['required', 'string'],
             'published_at' => ['nullable', 'date'],
             'author_name' => ['nullable', 'string', 'max:255'],
