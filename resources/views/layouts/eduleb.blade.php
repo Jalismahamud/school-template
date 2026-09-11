@@ -8,6 +8,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="পাশ্চিম ডাগরী আইডিয়াল স্কুল একটি নিরাপদ, সহায়ক ও মানসম্মত শিক্ষার পরিবেশ গড়ে তুলতে প্রতিশ্রুতিবদ্ধ।">
 		<meta name="keywords" content="বিদ্যালয়, শিক্ষা, পাশ্চিম ডাগরী আইডিয়াল স্কুল, মির্জাপুর, গাজীপুর">
+		<meta name="author" content="পাশ্চিম ডাগরী আইডিয়াল স্কুল">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="{{ url()->current() }}">
+		<link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
+		<link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="bn_BD">
+		<meta property="og:title" content="@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')">
+		<meta property="og:description" content="পাশ্চিম ডাগরী আইডিয়াল স্কুলের শিক্ষা, শিক্ষক, সংবাদ ও যোগাযোগের তথ্য।">
+		<meta property="og:url" content="{{ url()->current() }}">
+		<meta property="og:site_name" content="পাশ্চিম ডাগরী আইডিয়াল স্কুল">
+		<meta property="og:image" content="{{ asset('images/logo.png') }}">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')">
+		<meta name="twitter:description" content="পাশ্চিম ডাগরী আইডিয়াল স্কুলের শিক্ষা, শিক্ষক, সংবাদ ও যোগাযোগের তথ্য।">
+		<meta name="twitter:image" content="{{ asset('images/logo.png') }}">
+		<script type="application/ld+json">
+		{!! json_encode([
+			'@context' => 'https://schema.org',
+			'@type' => 'EducationalOrganization',
+			'name' => 'পাশ্চিম ডাগরী আইডিয়াল স্কুল',
+			'alternateName' => 'Pashchim Dagori Ideal School',
+			'url' => url('/'),
+			'logo' => asset('images/logo.png'),
+			'founder' => [
+				'@type' => 'Person',
+				'name' => 'আলহাজ্ব মোঃ সুরুজ্জামান মাস্টার',
+			],
+			'address' => [
+				'@type' => 'PostalAddress',
+				'streetAddress' => 'পাশ্চিম ডাগরী, মির্জাপুর',
+				'addressLocality' => 'গাজীপুর সদর',
+				'addressRegion' => 'গাজীপুর',
+				'addressCountry' => 'BD',
+			],
+			'telephone' => '+8801772849386',
+		], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) !!}
+		</script>
 		<title>@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')</title>
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
