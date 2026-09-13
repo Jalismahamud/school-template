@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')
+@section('title', 'পশ্চিম ডগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -71,7 +71,7 @@
 		<div class="container">
 			<div class="section-title text-center">
 						<h2>শিক্ষার পথে আমাদের সঙ্গে</h2>
-						<p>পাশ্চিম ডাগরী আইডিয়াল স্কুলে শিক্ষার্থীদের নিয়মিত পাঠদান, শৃঙ্খলা, নৈতিকতা এবং সৃজনশীল বিকাশকে সমান গুরুত্ব দেওয়া হয়।</p>
+						<p>পশ্চিম ডগরী আইডিয়াল স্কুলে শিক্ষার্থীদের নিয়মিত পাঠদান, শৃঙ্খলা, নৈতিকতা এবং সৃজনশীল বিকাশকে সমান গুরুত্ব দেওয়া হয়।</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
@@ -119,7 +119,7 @@
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="ab_content">
 						<h2>উন্নত ভবিষ্যতের জন্য মানসম্মত শিক্ষা</h2>
-						<p>পাশ্চিম ডাগরী আইডিয়াল স্কুল শিক্ষার্থীদের একাডেমিক উৎকর্ষ, সৃজনশীলতা, আত্মবিশ্বাস ও নৈতিক মূল্যবোধ বিকাশে কাজ করে।</p>
+						<p>পশ্চিম ডগরী আইডিয়াল স্কুল শিক্ষার্থীদের একাডেমিক উৎকর্ষ, সৃজনশীলতা, আত্মবিশ্বাস ও নৈতিক মূল্যবোধ বিকাশে কাজ করে।</p>
 						<ul>
 							<li><span class="ti-check"></span> নিরাপদ ও সহায়ক শিক্ষার পরিবেশ</li>
 							<li><span class="ti-check"></span> অভিজ্ঞ ও দায়িত্বশীল শিক্ষক</li>
@@ -143,7 +143,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="ab_content">
-						<h2>কেন পাশ্চিম ডাগরী আইডিয়াল স্কুল?</h2>
+						<h2>কেন পশ্চিম ডগরী আইডিয়াল স্কুল?</h2>
 						<p>প্রতিটি শিক্ষার্থীর জন্য মানসম্মত শিক্ষা, যত্নশীল পরিবেশ এবং উন্নতির নিয়মিত সুযোগ তৈরি করাই আমাদের অঙ্গীকার।</p>
 						<ul>
 							<li><span class="ti-check"></span> একাডেমিক উৎকর্ষ ও সৃজনশীলতার চর্চা</li>
@@ -179,7 +179,7 @@
 						<div id="testimonial-slider" class="owl-carousel">
 							@foreach ([
 													['name' => 'একজন অভিভাবক', 'company' => 'পশ্চিম ডাগরী', 'image' => 'testimonial/1.png'],
-													['name' => 'একজন শিক্ষার্থী', 'company' => 'পাশ্চিম ডাগরী আইডিয়াল স্কুল', 'image' => 'testimonial/2.png'],
+													['name' => 'একজন শিক্ষার্থী', 'company' => 'পশ্চিম ডগরী আইডিয়াল স্কুল', 'image' => 'testimonial/2.png'],
 													['name' => 'একজন অভিভাবক', 'company' => 'গাজীপুর সদর', 'image' => 'testimonial/3.png'],
 							] as $testimonial)
 							<div class="testimonial">

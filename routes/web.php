@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\TeacherController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\SchoolSettingController;
+use App\Http\Controllers\Admin\ContactMessageController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [EdulebController::class, 'home'])->name('home');
@@ -51,6 +52,10 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('settings', [SchoolSettingController::class, 'edit'])->name('settings.edit');
     Route::put('settings', [SchoolSettingController::class, 'update'])->name('settings.update');
+    Route::get('messages', [ContactMessageController::class, 'index'])->name('messages.index');
+    Route::get('messages/{contactMessage}', [ContactMessageController::class, 'show'])->name('messages.show');
+    Route::patch('messages/{contactMessage}/read', [ContactMessageController::class, 'markAsRead'])->name('messages.read');
+    Route::patch('messages/{contactMessage}/unread', [ContactMessageController::class, 'markAsUnread'])->name('messages.unread');
     Route::resource('teachers', TeacherController::class)->except('show');
     Route::resource('students', StudentController::class)->except('show');
     Route::resource('blogs', BlogController::class)->except('show');

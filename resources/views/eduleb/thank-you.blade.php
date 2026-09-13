@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'বার্তা পাঠানো হয়েছে - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
+@section('title', 'বার্তা পাঠানো হয়েছে - পশ্চিম ডগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -10,9 +10,7 @@
 		height: 500px;
 		background:#1a2237;
 	}
-	.welcome-area .hero-text{
-		margin-top:150px;
-	}
+	
 	.welcome-area .hero-text h1 {
 		color: #35ac39;
 		font-size: 60px;

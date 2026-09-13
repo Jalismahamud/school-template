@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', $post->title.' - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
+@section('title', $post->title.' - পশ্চিম ডগরী আইডিয়াল স্কুল')
 
 @section('content')
 

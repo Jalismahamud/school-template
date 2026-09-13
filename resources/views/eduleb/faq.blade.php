@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'সাধারণ জিজ্ঞাসা - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
+@section('title', 'সাধারণ জিজ্ঞাসা - পশ্চিম ডগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -87,7 +87,7 @@
 					<div class="founder-card-content">
 						<span class="founder-card-label">প্রতিষ্ঠাতা</span>
 						<h2>আলহাজ্ব মোঃ সুরুজ্জামান মাস্টার</h2>
-						<p>পাশ্চিম ডাগরী আইডিয়াল স্কুলের প্রতিষ্ঠাতা</p>
+						<p>পশ্চিম ডগরী আইডিয়াল স্কুলের প্রতিষ্ঠাতা</p>
 					</div>
 					<a class="founder-card-link" href="{{ route('about') }}" aria-label="প্রতিষ্ঠাতা সম্পর্কে আরও জানুন"><span class="ti-arrow-top-right"></span></a>
 				</div>

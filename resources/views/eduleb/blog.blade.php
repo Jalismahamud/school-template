@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'বিদ্যালয় সংবাদ - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
+@section('title', 'বিদ্যালয় সংবাদ - পশ্চিম ডগরী আইডিয়াল স্কুল')
 
 @section('content')
 

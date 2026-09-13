@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\ContactMessage;
 use App\Models\Student;
 use App\Models\Teacher;
 use Illuminate\Http\RedirectResponse;
@@ -69,14 +70,16 @@ class EdulebController extends Controller
 
     public function contactSubmit(Request $request): RedirectResponse
     {
-        $request->validate([
+        $data = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
             'subject' => ['nullable', 'string', 'max:255'],
-            'message' => ['required', 'string'],
+            'message' => ['required', 'string', 'max:5000'],
         ]);
 
-        return redirect()->route('thank-you');
+        ContactMessage::create($data);
+
+        return redirect()->route('thank-you')->with('status', 'আপনার বার্তা সফলভাবে পাঠানো হয়েছে।');
     }
 
     public function thankYou(): View

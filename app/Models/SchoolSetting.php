@@ -13,19 +13,21 @@ class SchoolSetting extends Model
         'phone',
         'address',
         'whatsapp_url',
+        'facebook_url',
         'footer_description',
     ];
 
     public static function defaults(): array
     {
         return [
-            'school_name' => 'পাশ্চিম ডাগরী আইডিয়াল স্কুল',
+            'school_name' => 'পশ্চিম ডগরী আইডিয়াল স্কুল',
             'logo' => 'images/logo.png',
             'header_label' => 'বিদ্যালয় সংক্রান্ত তথ্যের জন্য',
             'phone' => '01772-849386',
             'address' => 'পাশ্চিম ডাগরী, মির্জাপুর, গাজীপুর সদর, গাজীপুর',
             'whatsapp_url' => 'https://wa.me/8801772849386',
-            'footer_description' => 'পাশ্চিম ডাগরী আইডিয়াল স্কুল নিরাপদ ও সহায়ক পরিবেশে মানসম্মত শিক্ষা, সৃজনশীলতা, আত্মবিশ্বাস এবং নৈতিক মূল্যবোধ গড়ে তুলতে কাজ করে।',
+            'facebook_url' => null,
+            'footer_description' => 'পশ্চিম ডগরী আইডিয়াল স্কুল নিরাপদ ও সহায়ক পরিবেশে মানসম্মত শিক্ষা, সৃজনশীলতা, আত্মবিশ্বাস এবং নৈতিক মূল্যবোধ গড়ে তুলতে কাজ করে।',
         ];
     }
 

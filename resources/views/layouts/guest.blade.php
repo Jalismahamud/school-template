@@ -7,7 +7,7 @@
 		<link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
 		<link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
 
-        <title>পাশ্চিম ডাগরী আইডিয়াল স্কুল</title>
+        <title>পশ্চিম ডগরী আইডিয়াল স্কুল</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

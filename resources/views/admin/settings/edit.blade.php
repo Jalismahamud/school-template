@@ -56,6 +56,12 @@
                     </div>
 
                     <div>
+                        <x-input-label for="facebook_url" value="Facebook link" />
+                        <x-text-input id="facebook_url" name="facebook_url" type="url" class="mt-1 block w-full" value="{{ old('facebook_url', $setting->facebook_url) }}" placeholder="https://www.facebook.com/your-page" />
+                        <x-input-error :messages="$errors->get('facebook_url')" class="mt-2" />
+                    </div>
+
+                    <div>
                         <x-input-label for="footer_description" value="Footer description" />
                         <textarea id="footer_description" name="footer_description" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>{{ old('footer_description', $setting->footer_description) }}</textarea>
                         <x-input-error :messages="$errors->get('footer_description')" class="mt-2" />

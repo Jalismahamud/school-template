@@ -15,13 +15,13 @@
 		<link rel="apple-touch-icon" href="{{ $schoolSettings->logo_url }}">
 		<meta property="og:type" content="website">
 		<meta property="og:locale" content="bn_BD">
-		<meta property="og:title" content="@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')">
+		<meta property="og:title" content="@yield('title', 'পশ্চিম ডগরী আইডিয়াল স্কুল')">
 		<meta property="og:description" content="{{ $schoolSettings->footer_description }}">
 		<meta property="og:url" content="{{ url()->current() }}">
 		<meta property="og:site_name" content="{{ $schoolSettings->school_name }}">
 		<meta property="og:image" content="{{ $schoolSettings->logo_url }}">
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')">
+		<meta name="twitter:title" content="@yield('title', 'পশ্চিম ডগরী আইডিয়াল স্কুল')">
 		<meta name="twitter:description" content="{{ $schoolSettings->footer_description }}">
 		<meta name="twitter:image" content="{{ $schoolSettings->logo_url }}">
 		<script type="application/ld+json">
@@ -46,7 +46,7 @@
 			'telephone' => $schoolSettings->phone,
 		], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) !!}
 		</script>
-		<title>@yield('title', 'পাশ্চিম ডাগরী আইডিয়াল স্কুল')</title>
+		<title>@yield('title', 'পশ্চিম ডগরী আইডিয়াল স্কুল')</title>
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
 		<!-- Google Font -->
@@ -156,10 +156,12 @@
 							<p>{{ $schoolSettings->footer_description }}</p>
 							<div class="social_profile">
 								<ul>
-									<li><a class="f_facebook" href="#"><i class="fa-solid fa-x"></i></a></li>
-									<li><a class="f_twitter" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-									<li><a class="f_instagram"href="#"><i class="fa-brands fa-instagram"></i></a></li>
-									<li><a class="f_linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+									@if ($schoolSettings->facebook_url)
+										<li><a class="f_facebook" href="{{ $schoolSettings->facebook_url }}" target="_blank" rel="noopener" aria-label="ফেসবুক"><i class="fa-brands fa-facebook-f"></i></a></li>
+									@endif
+									@if ($schoolSettings->whatsapp_url)
+										<li><a class="f_whatsapp" href="{{ $schoolSettings->whatsapp_url }}" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ"><i class="fa-brands fa-whatsapp"></i></a></li>
+									@endif
 								</ul>
 							</div>
 						</div>
@@ -189,8 +191,12 @@
 								<p><a href="tel:{{ preg_replace('/[^0-9+]/', '', $schoolSettings->phone) }}">{{ $schoolSettings->phone }}</a></p>
 							</div>
 							<div class="sf_contact">
+								<span class="ti-email"></span>
+								<p><a href="mailto:info@pashchimdagoriidealschool.xyz">info@pashchimdagoriidealschool.xyz</a></p>
+							</div>
+							<div class="sf_contact">
 								<span class="ti-mobile"></span>
-								<p><a href="{{ $schoolSettings->whatsapp_url }}">হোয়াটসঅ্যাপে যোগাযোগ</a></p>
+								<p><a href="{{ $schoolSettings->whatsapp_url }}">হোয়াটসঅ্যাপে যোগাযোগ</a></p>
 							</div>
 						</div>
 					</div><!--- END COL -->
@@ -202,7 +208,7 @@
 		<!-- START FOOTER COPYRIGHT -->
 		<div class="foot_copy">
 			<div class="footer_copyright">
-				<p>&copy; {{ date('Y') }}। পাশ্চিম ডাগরী আইডিয়াল স্কুল। সর্বস্বত্ব সংরক্ষিত।</p>
+				<p>&copy; {{ date('Y') }}। পশ্চিম ডগরী আইডিয়াল স্কুল। সর্বস্বত্ব সংরক্ষিত।</p>
 			</div>
 		</div>
 		<!-- END FOOTER COPYRIGHT -->

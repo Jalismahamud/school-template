@@ -1,6 +1,6 @@
 @extends('layouts.eduleb')
 
-@section('title', 'আমাদের সম্পর্কে - পাশ্চিম ডাগরী আইডিয়াল স্কুল')
+@section('title', 'আমাদের সম্পর্কে - পশ্চিম ডগরী আইডিয়াল স্কুল')
 
 @section('content')
 
@@ -24,7 +24,7 @@
 	<section class="top_cat__area section-padding" style="background-image: url({{ asset('assets/img/bg/shape-1.png') }});  background-size:cover; background-position: center center;">
 		<div class="container">
 			<div class="section-title text-center">
-						<h2>পাশ্চিম ডাগরী আইডিয়াল স্কুল সম্পর্কে</h2>
+						<h2>পশ্চিম ডগরী আইডিয়াল স্কুল সম্পর্কে</h2>
 						<p>গাজীপুর সদর এলাকার শিক্ষার্থীদের জন্য একটি শৃঙ্খলাপূর্ণ, নিরাপদ ও মানবিক শিক্ষার পরিবেশ গড়ে তোলাই আমাদের লক্ষ্য।</p>
 			</div>
 			<div class="row">
@@ -73,7 +73,7 @@
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="ab_content">
 						<h2>উন্নত ভবিষ্যতের জন্য মানসম্মত শিক্ষা</h2>
-						<p>পাশ্চিম ডাগরী আইডিয়াল স্কুলে শিক্ষার্থীদের একাডেমিক উৎকর্ষ, সৃজনশীলতা, আত্মবিশ্বাস ও নৈতিক মূল্যবোধ বিকাশে গুরুত্ব দেওয়া হয়।</p>
+						<p>পশ্চিম ডগরী আইডিয়াল স্কুলে শিক্ষার্থীদের একাডেমিক উৎকর্ষ, সৃজনশীলতা, আত্মবিশ্বাস ও নৈতিক মূল্যবোধ বিকাশে গুরুত্ব দেওয়া হয়।</p>
 						<ul>
 							<li><span class="ti-check"></span> নিরাপদ ও সহায়ক শিক্ষার পরিবেশ</li>
 							<li><span class="ti-check"></span> অভিজ্ঞ ও দায়িত্বশীল শিক্ষক</li>

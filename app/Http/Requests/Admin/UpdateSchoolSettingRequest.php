@@ -20,6 +20,7 @@ class UpdateSchoolSettingRequest extends FormRequest
             'phone' => ['required', 'string', 'max:50'],
             'address' => ['required', 'string', 'max:500'],
             'whatsapp_url' => ['nullable', 'url', 'max:255'],
+            'facebook_url' => ['nullable', 'url', 'max:255'],
             'footer_description' => ['required', 'string', 'max:1000'],
         ];
     }

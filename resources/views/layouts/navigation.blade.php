@@ -27,6 +27,12 @@
                     <x-nav-link :href="route('admin.settings.edit')" :active="request()->routeIs('admin.settings.*')">
                         বিদ্যালয়ের তথ্য
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.messages.index')" :active="request()->routeIs('admin.messages.*')">
+                        বার্তা
+                        @if (($unreadMessageCount ?? 0) > 0)
+                            <span class="ms-1 rounded-full bg-red-600 px-2 py-0.5 text-xs text-white">{{ $unreadMessageCount }}</span>
+                        @endif
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -93,6 +99,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('admin.settings.edit')" :active="request()->routeIs('admin.settings.*')">
                 বিদ্যালয়ের তথ্য
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.messages.index')" :active="request()->routeIs('admin.messages.*')">
+                বার্তা @if (($unreadMessageCount ?? 0) > 0) ({{ $unreadMessageCount }}) @endif
             </x-responsive-nav-link>
         </div>
 
