@@ -22,6 +22,10 @@ class UpdateSchoolSettingRequest extends FormRequest
             'whatsapp_url' => ['nullable', 'url', 'max:255'],
             'facebook_url' => ['nullable', 'url', 'max:255'],
             'footer_description' => ['required', 'string', 'max:1000'],
+            'about_image' => ['nullable', 'image', 'max:4096'],
+            'why_school_image' => ['nullable', 'image', 'max:4096'],
+            'testimonial_image' => ['nullable', 'image', 'max:4096'],
+            'faq_image' => ['nullable', 'image', 'max:4096'],
         ];
     }
 }

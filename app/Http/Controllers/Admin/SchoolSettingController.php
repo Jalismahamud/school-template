@@ -30,6 +30,13 @@ class SchoolSettingController extends Controller
             $data['logo'] = $this->storeAsWebp($request->file('logo'), 'school');
         }
 
+        foreach (['about_image', 'why_school_image', 'testimonial_image', 'faq_image'] as $imageField) {
+            if ($request->hasFile($imageField)) {
+                $this->deleteStoredImage($setting?->{$imageField});
+                $data[$imageField] = $this->storeAsWebp($request->file($imageField), 'school');
+            }
+        }
+
         if (! $setting) {
             $setting = new SchoolSetting(SchoolSetting::defaults());
         }

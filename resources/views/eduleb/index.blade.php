@@ -113,7 +113,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="ab_img">
-								<img src="{{ asset('assets/img/about1.png') }}" class="img-fluid" alt="বিদ্যালয়ের শিক্ষার পরিবেশ">
+								<img src="{{ $schoolSettings->about_image_url }}" class="img-fluid" alt="বিদ্যালয়ের শিক্ষার পরিবেশ">
 					</div>
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
@@ -155,7 +155,7 @@
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="ab_img">
-								<img src="{{ asset('assets/img/about3.png') }}" class="img-fluid" alt="শিক্ষার্থীদের অগ্রগতি">
+								<img src="{{ $schoolSettings->why_school_image_url }}" class="img-fluid" alt="শিক্ষার্থীদের অগ্রগতি">
 					</div>
 				</div><!--- END COL -->
 			</div><!--- END ROW -->
@@ -172,7 +172,7 @@
 				<div class="row">
 					<div class="col-lg-6 col-sm-12 col-xs-12">
 						<div class="ab_img">
-							<img src="{{ asset('assets/img/review.png') }}" class="img-fluid" alt="image">
+							<img src="{{ $schoolSettings->testimonial_image_url }}" class="img-fluid" alt="image">
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-6 col-sm-12 col-xs-12">

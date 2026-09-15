@@ -31,6 +31,20 @@
                         <img src="{{ $setting->logo_url }}" alt="বিদ্যালয়ের logo" class="mt-3 h-24 w-24 object-contain" />
                     </div>
 
+                    @foreach ([
+                        'about_image' => ['label' => 'উন্নত ভবিষ্যতের জন্য মানসম্মত শিক্ষা - image', 'url' => $setting->about_image_url],
+                        'why_school_image' => ['label' => 'কেন পশ্চিম ডগরী আইডিয়াল স্কুল? - image', 'url' => $setting->why_school_image_url],
+                        'testimonial_image' => ['label' => 'অভিভাবক ও শিক্ষার্থীদের কথা - image', 'url' => $setting->testimonial_image_url],
+                        'faq_image' => ['label' => 'FAQ image', 'url' => $setting->faq_image_url],
+                    ] as $imageField => $image)
+                        <div>
+                            <x-input-label for="{{ $imageField }}" :value="$image['label']" />
+                            <input id="{{ $imageField }}" name="{{ $imageField }}" type="file" accept="image/*" class="mt-1 block w-full text-sm text-gray-600" />
+                            <x-input-error :messages="$errors->get($imageField)" class="mt-2" />
+                            <img src="{{ $image['url'] }}" alt="{{ $image['label'] }}" class="mt-3 h-24 w-36 object-cover" />
+                        </div>
+                    @endforeach
+
                     <div>
                         <x-input-label for="header_label" value="Header phone label" />
                         <x-text-input id="header_label" name="header_label" type="text" class="mt-1 block w-full" value="{{ old('header_label', $setting->header_label) }}" required />

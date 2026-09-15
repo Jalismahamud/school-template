@@ -2459,7 +2459,14 @@ font-size: 18px;
 	overflow: hidden;
 	margin-bottom:0;
 }
-.sf_contact p a{color: #525fe1;}
+.sf_contact p a{
+	color: #525fe1;
+}
+.sf_contact p a[href^="mailto:"]{
+	display: block;
+	font-size: 13px;
+	white-space: nowrap;
+}
 .sf_contact p a:hover{color: #f26b65;}
 .footer_menu{float: right;}
 @media only screen and (max-width:480px){

@@ -78,7 +78,7 @@
 					</div><!-- END COL  -->
 					<div class="col-lg-5 col-sm-12 col-xs-12">
 						<div class="faq_img">
-							<img src="{{ asset('assets/img/faq.jpg') }}" alt="faq image" />
+							<img src="{{ $schoolSettings->faq_image_url }}" alt="faq image" />
 						</div>
 					</div>
 				</div><!--END  ROW  -->

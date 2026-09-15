@@ -26,6 +26,10 @@ class AppServiceProvider extends ServiceProvider
             $view->with('schoolSettings', SchoolSetting::current());
         });
 
+        View::composer('eduleb.*', function ($view): void {
+            $view->with('schoolSettings', SchoolSetting::current());
+        });
+
         View::composer('layouts.navigation', function ($view): void {
             $view->with('unreadMessageCount', ContactMessage::unread()->count());
         });

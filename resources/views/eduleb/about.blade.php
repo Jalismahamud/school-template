@@ -67,7 +67,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="ab_img">
-						<img src="{{ asset('assets/img/about1.png') }}" class="img-fluid" alt="বিদ্যালয়ের শিক্ষার পরিবেশ">
+						<img src="{{ $schoolSettings->about_image_url }}" class="img-fluid" alt="বিদ্যালয়ের শিক্ষার পরিবেশ">
 					</div>
 				</div><!--- END COL -->
 				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
